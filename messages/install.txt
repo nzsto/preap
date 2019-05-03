@@ -1,0 +1,40 @@
+____________________________________________________________________________
+| 
+|	╔═╗╦═╗╔═╗╔═╗╔═╗   Preap Dark Theme
+|	╠═╝╠╦╝║╣ ╠═╣╠═╝   Sublime Text 3
+|	╩  ╩╚═╚═╝╩ ╩╩     https://github.com/equinusocio/preap
+|____________________________________________________________________________
+
+	
+
+	To activate the theme, add or replace your current theme settings with the code below.
+	************************************************************************
+
+	{
+		"theme": "preap.sublime-theme",
+		"color_scheme": "Packages/Preap/Schemes/preap.tmTheme",
+	}
+
+
+
+
+	To enable Preap for Markdown
+	************************************************************************
+
+	First, **open a markdown(.md) file**, then navigate to `Sublime Text` > `Preferences` > `Settings - More` > `Syntax Specific - User`  in the menu bar.
+	Add to your current settings or replace with the following:
+
+	{
+		"color_scheme": "Packages/Preap/Schemes/preap-markdown.tmTheme",
+		"draw_centered": true, // Centers the column in the window
+		"draw_indent_guides": false,
+		"font_size": 15,
+		"trim_trailing_white_space_on_save": false,
+		"word_wrap": true,
+		"wrap_width": 80  // Sets the # of characters per line
+	}
+
+
+	************************************************************************
+	MAKE SURE TO RESTART SUBLIME AFTER INSTALLING AND ACTIVATING PREAP
+

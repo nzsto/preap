@@ -1,0 +1,12 @@
+____________________________________________________________________________
+|
+| ╔═╗╦═╗╔═╗╔═╗╔═╗
+| ╠═╝╠╦╝║╣ ╠═╣╠═╝   v1.2.8 Release
+| ╩  ╩╚═╚═╝╩ ╩╩     http://equinusocio.github.io/preap
+|____________________________________________________________________________
+
+
+## UI IMPROVEMENTS
+
+	- Added history menu icon (pink dots) inside the input in find/replace panel
+	- Fix overlay scrollbar track color

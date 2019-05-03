@@ -1,0 +1,12 @@
+____________________________________________________________________________
+|
+| ╔═╗╦═╗╔═╗╔═╗╔═╗
+| ╠═╝╠╦╝║╣ ╠═╣╠═╝   v1.1.1 Release
+| ╩  ╩╚═╚═╝╩ ╩╩     https://github.com/equinusocio/preap
+|____________________________________________________________________________
+
+
+## UI IMPROVEMENTS
+
+	- Restore previus tabs style
+	- Added new icon for modified tabs

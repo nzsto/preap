@@ -1,0 +1,12 @@
+____________________________________________________________________________
+| 
+| ╔═╗╦═╗╔═╗╔═╗╔═╗   
+| ╠═╝╠╦╝║╣ ╠═╣╠═╝   v1.0.6 Release
+| ╩  ╩╚═╚═╝╩ ╩╩     https://github.com/equinusocio/preap
+|____________________________________________________________________________
+
+
+## PACKAGE CONTROLL
+
+	- Fixed theme error when installed from Package Control (https://packagecontrol.io/)
+

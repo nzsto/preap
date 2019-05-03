@@ -1,0 +1,11 @@
+____________________________________________________________________________
+|
+| ╔═╗╦═╗╔═╗╔═╗╔═╗
+| ╠═╝╠╦╝║╣ ╠═╣╠═╝   v1.2.7 Release
+| ╩  ╩╚═╚═╝╩ ╩╩     http://equinusocio.github.io/preap
+|____________________________________________________________________________
+
+
+## UI IMPROVEMENTS
+
+	- Added static unsaved tab indicator (add "static_modified_tab": true) in your preferences.

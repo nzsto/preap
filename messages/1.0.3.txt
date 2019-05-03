@@ -1,0 +1,18 @@
+____________________________________________________________________________
+| 
+| ╔═╗╦═╗╔═╗╔═╗╔═╗   
+| ╠═╝╠╦╝║╣ ╠═╣╠═╝   v1.0.3 Release
+| ╩  ╩╚═╚═╝╩ ╩╩     https://github.com/equinusocio/preap
+|____________________________________________________________________________
+
+
+## SYNTAX IMPROVEMENT
+
+	- Fixed less mixins colors
+	- Fixed function name color saturation
+
+
+
+## UI IMPROVEMENTS
+
+	- Updated find/replace icons

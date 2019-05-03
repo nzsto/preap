@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>Mattia Astorino (www.astorinomattia.it)</string>
+	<key>comment</key>
+	<string>Preap, a subtle Sublime Text Theme</string>
+	<key>name</key>
+	<string>Preap</string>
+	<key>settings</key>
+	<array>
+		<dict>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#1f2020</string>
+				<key>caret</key>
+				<string>#24dbec</string>
+				<key>foreground</key>
+				<string>#d9d9d9</string>
+				<key>invisibles</key>
+				<string>#24dbec</string>
+				<key>selection</key>
+				<string>#1E3538</string>
+				<key>selectionForeground</key>
+                <string>#54949c</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

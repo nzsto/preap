@@ -1,0 +1,4 @@
+v1.0.0 Release
+-------------------
+Hey there,
+this is the first release of this beautiful theme :)

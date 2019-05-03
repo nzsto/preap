@@ -1,0 +1,26 @@
+____________________________________________________________________________
+|
+| ╔═╗╦═╗╔═╗╔═╗╔═╗
+| ╠═╝╠╦╝║╣ ╠═╣╠═╝   v1.1.0 Release
+| ╩  ╩╚═╚═╝╩ ╩╩     https://github.com/equinusocio/preap
+|____________________________________________________________________________
+
+
+## UI IMPROVEMENTS
+
+	- Revisited tabs bar
+	- New markup file icon
+	- Assets filesize compression
+	- Increased folder icon size in tree view
+
+
+## SYNTAX IMPROVEMENTS
+
+	- Reduced syntax color saturation
+	- Improved contrast in text selection
+	- Improvements in CSS rules detection
+
+
+## CORE
+
+	- Added file extension settings

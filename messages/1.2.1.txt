@@ -1,0 +1,14 @@
+____________________________________________________________________________
+|
+| ╔═╗╦═╗╔═╗╔═╗╔═╗
+| ╠═╝╠╦╝║╣ ╠═╣╠═╝   v1.2.1 Release
+| ╩  ╩╚═╚═╝╩ ╩╩     https://github.com/equinusocio/preap
+|____________________________________________________________________________
+
+
+## UI IMPROVEMENTS
+
+	- Added colored label for modified tabs when setting "show_tab_close_buttons": false
+	- Added unsaved tab mark for non active tabs
+	- Fix Quick Panel (Projects) colors and input margins
+	- New tooltip color

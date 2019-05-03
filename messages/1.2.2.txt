@@ -1,0 +1,14 @@
+____________________________________________________________________________
+|
+| ╔═╗╦═╗╔═╗╔═╗╔═╗
+| ╠═╝╠╦╝║╣ ╠═╣╠═╝   v1.2.2 Release
+| ╩  ╩╚═╚═╝╩ ╩╩     https://github.com/equinusocio/preap
+|____________________________________________________________________________
+
+
+## UI IMPROVEMENTS
+
+	- Rewrited tabs notification system and options [Issue #6]
+	- Fix labels color and matched elements in quick panel
+	- Fix find/replace panel background, input field color and icons
+	- Fix current file color in tree view panel

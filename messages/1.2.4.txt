@@ -1,0 +1,15 @@
+____________________________________________________________________________
+|
+| ╔═╗╦═╗╔═╗╔═╗╔═╗
+| ╠═╝╠╦╝║╣ ╠═╣╠═╝   v1.2.4 Release
+| ╩  ╩╚═╚═╝╩ ╩╩     https://github.com/equinusocio/preap
+|____________________________________________________________________________
+
+
+## SYNTAX HIGHLIGHT IMPROVEMENTS
+
+	- Revisited HTML syntax highlight color
+	- Revisited XHTML syntax highlight color
+	- Revisited Javascript and JSON syntax highlight color
+	- Revisited Less and Scss syntax highlight color
+	- Revisited Twig syntax highlight color

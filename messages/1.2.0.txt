@@ -1,0 +1,23 @@
+____________________________________________________________________________
+|
+| ╔═╗╦═╗╔═╗╔═╗╔═╗
+| ╠═╝╠╦╝║╣ ╠═╣╠═╝   v1.2.0 Release
+| ╩  ╩╚═╚═╝╩ ╩╩     https://github.com/equinusocio/preap
+|____________________________________________________________________________
+
+
+## UI IMPROVEMENTS
+
+	- Fixed close button when "show_tab_close_buttons" in settings [Issue #4]
+	- Fixed tabs bar background
+	- New scrollbars style
+	- New UI color calibration
+	- New modified tabs animated indicator (open issue if you think it's invasive)
+	- Fixed text alignment in search input
+	- New color for match elements inside autocomplete panel
+	- Revisited find/replace panel
+
+
+## CORE
+
+	- Removed specific themes override [Issue #5]
