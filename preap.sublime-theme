@@ -2,7 +2,7 @@
     {
         // Tab set
         "class": "tabset_control",
-        "layer0.texture": "Preap/assets/tabset-background.png",
+        "layer0.texture": "preap/assets/tabset-background.png",
         "layer0.inner_margin": [10, 0],
         "layer0.opacity": 1.0,
         "content_margin": [5, 0, 5, 0],
@@ -26,7 +26,7 @@
     {
         "class": "tabset_control",
         "settings": ["tabs_medium"],
-        "tab_height": 45
+        "tab_height": 40
     },
     // Tab element
     {
@@ -37,19 +37,19 @@
 
         // Inactive Tab
 
-        "layer0.texture": "Preap/assets/tab-inactive.png",
+        "layer0.texture": "preap/assets/tab-inactive.png",
         "layer0.inner_margin": [20, 4],
         "layer0.opacity": 1.0,
 
         // Active Tab
 
-        "layer1.texture": "Preap/assets/tab-active.png",
+        "layer1.texture": "preap/assets/tab-active.png",
         "layer1.inner_margin": [20, 4],
         "layer1.opacity": 0,
 
         // Hover Tab
 
-        "layer2.texture": "Preap/assets/tab-hover.png",
+        "layer2.texture": "preap/assets/tab-hover.png",
         "layer2.inner_margin": [20, 4],
         "layer2.opacity": 0
     },
@@ -63,19 +63,19 @@
 
         // Inactive Tab
 
-        "layer0.texture": "Preap/assets/tab-inactive-border.png",
+        "layer0.texture": "preap/assets/tab-inactive-border.png",
         "layer0.inner_margin": [20, 4],
         "layer0.opacity": 1.0,
 
         // Active Tab
 
-        "layer1.texture": "Preap/assets/tab-active-border.png",
+        "layer1.texture": "preap/assets/tab-active-border.png",
         "layer1.inner_margin": [20, 4],
         "layer1.opacity": 0,
 
         // Hover Tab
 
-        "layer2.texture": "Preap/assets/tab-hover-border.png",
+        "layer2.texture": "preap/assets/tab-hover-border.png",
         "layer2.inner_margin": [20, 4],
         "layer2.opacity": 0
     },
@@ -117,7 +117,7 @@
         "fade": false,
         "fg": [144, 146, 147],
         "font.bold": false,
-        "font.size": 11
+        "font.size": 12
     },
     {
         "class": "tab_label",
@@ -186,15 +186,15 @@
         "content_margin": [8, 8],
 
         // Tab close default layer
-        "layer0.texture": "Preap/assets/tab-close.png",
+        "layer0.texture": "preap/assets/tab-close.png",
         "layer0.opacity": 0,
 
         // Tab modified animation
         "layer1.texture":
         {
             "keyframes": [
-                "Preap/assets/close_tab/tab-dirty.png",
-                "Preap/assets/close_tab/tab-dirty1.png"
+                "preap/assets/close_tab/tab-dirty.png",
+                "preap/assets/close_tab/tab-dirty1.png"
             ],
             "loop": true,
             "frame_time": 0.800,
@@ -202,7 +202,7 @@
         "layer1.opacity": 0,
 
         // Tab modified static
-        "layer2.texture": "Preap/assets/tab-dirty-active.png",
+        "layer2.texture": "preap/assets/tab-dirty-active.png",
         "layer2.opacity": 0,
     },
     // Option
@@ -212,11 +212,11 @@
         "content_margin": [8, 8],
 
         // Tab close default layer
-        "layer0.texture": "Preap/assets/tab-close.png",
+        "layer0.texture": "preap/assets/tab-close.png",
         "layer0.opacity": 0,
 
         // Tab close modified
-        "layer1.texture": "Preap/assets/tab-dirty-active.png",
+        "layer1.texture": "preap/assets/tab-dirty-active.png",
         "layer1.opacity": 0
     },
 
@@ -357,44 +357,72 @@
         "attributes": ["transient"],
         "font.italic": true
     },
-
+    // 折叠图标
+    {
+        "class": "fold_button_control",
+        "layer0.texture": "preap/assets/fold-closed.png",
+        "layer0.opacity": 1.0,
+        "layer0.inner_margin": 0,
+        "layer1.texture": "preap/assets/fold-closed-pressed.png",
+        "layer1.opacity": 0,
+        "layer1.inner_margin": 0,
+        "content_margin": [9, 7, 8, 6]
+    },
+    {
+        "class": "fold_button_control",
+        "attributes": ["hover"],
+        "layer0.opacity": 0,
+        "layer1.opacity": 0.75
+    },
+    {
+        "class": "fold_button_control",
+        "attributes": ["pressed"],
+        "layer0.opacity": 0,
+        "layer1.opacity": 1.0
+    },
+    {
+        "class": "fold_button_control",
+        "attributes": ["expanded"],
+        "layer0.texture": "preap/assets/fold-open.png",
+        "layer1.texture": "preap/assets/fold-open-pressed.png"
+    },
     // Tab dropdown
     {
         "class": "show_tabs_dropdown_button",
         "content_margin": [10, 10],
-        "layer0.texture": "Preap/assets/tabset-list.png",
+        "layer0.texture": "preap/assets/tabset-list.png",
         "layer0.opacity": 1
     },
     {
         "class": "show_tabs_dropdown_button",
         "attributes": ["hover"],
-        "layer0.texture": "Preap/assets/tabset-list-hover.png",
+        "layer0.texture": "preap/assets/tabset-list-hover.png",
         "layer0.opacity": 1
     },
     // Tab scroll left
     {
         "class": "scroll_tabs_left_button",
         "content_margin": [9, 7, 8, 6],
-        "layer0.texture": "Preap/assets/tabset-left.png",
+        "layer0.texture": "preap/assets/tabset-left.png",
         "layer0.opacity": 0.5
     },
     {
         "class": "scroll_tabs_left_button",
         "attributes": ["hover"],
-        "layer0.texture": "Preap/assets/tabset-left-hover.png",
+        "layer0.texture": "preap/assets/tabset-left-hover.png",
         "layer0.opacity": 1
     },
     // Tab scroll right
     {
         "class": "scroll_tabs_right_button",
         "content_margin": [9, 7, 8, 6],
-        "layer0.texture": "Preap/assets/tabset-right.png",
+        "layer0.texture": "preap/assets/tabset-right.png",
         "layer0.opacity": 0.5
     },
     {
         "class": "scroll_tabs_right_button",
         "attributes": ["hover"],
-        "layer0.texture": "Preap/assets/tabset-right-hover.png",
+        "layer0.texture": "preap/assets/tabset-right-hover.png",
         "layer0.opacity": 1
     },
     // Standard vertical scroll bar
@@ -499,14 +527,14 @@
         "min_size": [80, 0],
 
         // Default button state
-        "layer0.texture": "Preap/assets/btn-large-on.png",
+        "layer0.texture": "preap/assets/btn-large-on.png",
         "layer0.opacity": 1,
         "layer0.inner_margin": [10, 10]
     },
     {
         "class": "button_control",
         "settings": ["findreplace_small"],
-        "content_margin": [18,18,18,18]
+        "content_margin": [10, 11, 10, 11]
     },
 
     //
@@ -515,7 +543,7 @@
     // Text input field item
     {
         "class": "text_line_control",
-        "layer0.texture": "Preap/assets/text-field.png",
+        "layer0.texture": "preap/assets/text-field.png",
         "layer0.opacity": 1,
         "content_margin": [0, 0]
     },
@@ -526,16 +554,16 @@
             "class": "panel_control"
         }],
         "settings": ["findreplace_small"],
-        "content_margin": [5, 15, 0, 0]
+        "content_margin": [5, 9, 5, 0]
     },
-    // {
-    //     "class": "dropdown_button_control",
-    //     "content_margin": [11, 11],
-    //     "layer0.texture": "Preap/assets/tabset-list.png",
-    //     "layer0.tint": [255, 255, 255],
-    //     "layer0.opacity": 1,
-    //     "layer0.inner_margin": [0, 0]
-    // },
+    {
+        "class": "dropdown_button_control",
+        "content_margin": [11, 11],
+        "layer0.texture": "preap/assets/tabset-list.png",
+        "layer0.tint": [255, 255, 255],
+        "layer0.opacity": 0,
+        "layer0.inner_margin": [0, 0]
+    },
     {
         "class": "dropdown_button_control",
         "attributes": ["hover"],
@@ -549,18 +577,18 @@
     // Bottom panel background
     {
         "class": "panel_control",
-        "layer0.texture": "Preap/assets/panel-background.png",
+        "layer0.texture": "preap/assets/panel-background.png",
         "layer0.inner_margin": [2, 2, 2, 2],
-        "layer0.opacity": 1,
+        "layer0.opacity": 0,
         "content_margin": [0, 0, -5, 0]
     },
     // Quick panel background
     {
         "class": "overlay_control",
-        "layer0.texture": "Preap/assets/overlay-bg.png",
+        "layer0.texture": "preap/assets/overlay-bg.png",
         "layer0.inner_margin": [30, 30],
         "layer0.opacity": 1.0,
-        "layer1.texture": "Preap/assets/quick-panel-background.png",
+        "layer1.texture": "preap/assets/quick-panel-background.png",
         "layer1.inner_margin": [30, 0, 20, 20],
         "layer1.opacity": 1.0,
         "content_margin": [20, 6, 20, 26]
@@ -574,7 +602,7 @@
         "class": "quick_panel",
         "row_padding": [10, 10],
         "layer0.tint": [34, 36, 38],
-        "layer0.opacity": 1.0
+        "layer0.opacity": 1
     },
     {
         "class": "quick_panel",
@@ -583,14 +611,14 @@
     },
     {
         "class": "quick_panel_row",
-        "layer0.texture": "Preap/assets/quick-panel-row.png",
+        "layer0.texture": "preap/assets/quick-panel-row.png",
         "layer0.inner_margin": [2, 2, 2, 2],
-        "layer0.opacity": 1.0
+        "layer0.opacity": 1
     },
     {
         "class": "quick_panel_row",
         "attributes": ["selected"],
-        "layer0.texture": "Preap/assets/quick-panel-row-selected.png"
+        "layer0.texture": "preap/assets/quick-panel-row-selected.png"
     },
     {
         "class": "quick_panel_label",
@@ -616,14 +644,14 @@
     //
     {
         "class": "mini_quick_panel_row",
-        "layer0.texture": "Preap/assets/quick-panel-row.png",
+        "layer0.texture": "preap/assets/quick-panel-row.png",
         "layer0.inner_margin": [2, 2, 2, 2],
-        "layer0.opacity": 1.0
+        "layer0.opacity": 1
     },
     {
         "class": "mini_quick_panel_row",
         "attributes": ["selected"],
-        "layer0.texture": "Preap/assets/quick-panel-row-selected.png"
+        "layer0.texture": "preap/assets/quick-panel-row-selected.png"
     },
 
     //
@@ -637,7 +665,7 @@
         "class": "auto_complete",
         "row_padding": [15, 10],
         "layer0.tint": [34, 36, 38],
-        "layer0.opacity": 1.0
+        "layer0.opacity": 1
     },
     {
         "class": "auto_complete_label",
@@ -650,7 +678,7 @@
     },
     {
         "class": "table_row",
-        "layer0.texture": "Preap/assets/code-completion-row-selected.png",
+        "layer0.texture": "preap/assets/code-completion-row-selected.png",
         "layer0.opacity": 0,
         "layer0.inner_margin": [1, 1]
     },
@@ -666,20 +694,20 @@
     // Button group middle
     {
         "class": "icon_button_control",
-        "layer0.texture": "Preap/assets/btn-group-middle.png",
+        "layer0.texture": "preap/assets/btn-group-middle.png",
         "layer0.opacity": 1,
         "content_margin": [20, 15]
     },
     {
         "class": "icon_button_control",
         "settings": ["findreplace_small"],
-        "content_margin": [18, 18, 18, 18]
+        "content_margin": [10, 10, 10, 10]
     },
     // Button group left
     {
         "class": "icon_button_control",
         "attributes": ["left"],
-        "layer0.texture": "Preap/assets/btn-group-left.png",
+        "layer0.texture": "preap/assets/btn-group-left.png",
         "layer0.opacity": 1,
         "content_margin": [20, 15, 15, 15]
     },
@@ -687,13 +715,13 @@
         "class": "icon_button_control",
         "attributes": ["left"],
         "settings": ["findreplace_small"],
-        "content_margin": [18, 18, 18, 18]
+        "content_margin": [10, 10, 10, 10]
     },
     // Button group right
     {
         "class": "icon_button_control",
         "attributes": ["right"],
-        "layer0.texture": "Preap/assets/btn-group-right.png",
+        "layer0.texture": "preap/assets/btn-group-right.png",
         "layer0.opacity": 1,
         "content_margin": [15, 15, 20, 15]
     },
@@ -701,13 +729,13 @@
         "class": "icon_button_control",
         "attributes": ["right"],
         "settings": ["findreplace_small"],
-        "content_margin": [18, 18, 18, 18]
+        "content_margin": [10, 10, 10, 10]
     },
     // Button single
     {
         "class": "icon_button_control",
         "attributes": ["left", "right"],
-        "layer0.texture": "Preap/assets/btn-single.png",
+        "layer0.texture": "preap/assets/btn-single.png",
         "layer0.opacity": 1,
         "content_margin": [20, 15]
     },
@@ -715,7 +743,7 @@
         "class": "icon_button_control",
         "attributes": ["left", "right"],
         "settings": ["findreplace_small"],
-        "content_margin": [18, 18, 18, 18]
+        "content_margin": [10, 10, 10, 10]
     },
     //
     // BOTTOM PANEL ICONS - GROUP 1
@@ -723,7 +751,7 @@
     // Regex search button
     {
         "class": "icon_regex",
-        "layer0.texture": "Preap/assets/icon-regex-off.png",
+        "layer0.texture": "preap/assets/icon-regex-off.png",
         "layer0.opacity": 1,
         "content_margin": [8, 8]
     },
@@ -734,7 +762,7 @@
             "class": "icon_button_control",
             "attributes": ["hover"]
         }],
-        "layer0.texture": "Preap/assets/icon-regex-hover.png"
+        "layer0.texture": "preap/assets/icon-regex-hover.png"
     },
     {
         "class": "icon_regex",
@@ -743,12 +771,12 @@
             "class": "icon_button_control",
             "attributes": ["selected"]
         }],
-        "layer0.texture": "Preap/assets/icon-regex-on.png"
+        "layer0.texture": "preap/assets/icon-regex-on.png"
     },
     // Case sensitive search button
     {
         "class": "icon_case",
-        "layer0.texture": "Preap/assets/icon-case-off.png",
+        "layer0.texture": "preap/assets/icon-case-off.png",
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
     },
@@ -759,7 +787,7 @@
             "class": "icon_button_control",
             "attributes": ["hover"]
         }],
-        "layer0.texture": "Preap/assets/icon-case-hover.png"
+        "layer0.texture": "preap/assets/icon-case-hover.png"
     },
     {
         "class": "icon_case",
@@ -768,12 +796,12 @@
             "class": "icon_button_control",
             "attributes": ["selected"]
         }],
-        "layer0.texture": "Preap/assets/icon-case-on.png"
+        "layer0.texture": "preap/assets/icon-case-on.png"
     },
     // Match whole word search button
     {
         "class": "icon_whole_word",
-        "layer0.texture": "Preap/assets/icon-word-off.png",
+        "layer0.texture": "preap/assets/icon-word-off.png",
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
     },
@@ -784,7 +812,7 @@
             "class": "icon_button_control",
             "attributes": ["hover"]
         }],
-        "layer0.texture": "Preap/assets/icon-word-hover.png"
+        "layer0.texture": "preap/assets/icon-word-hover.png"
     },
     {
         "class": "icon_whole_word",
@@ -793,7 +821,7 @@
             "class": "icon_button_control",
             "attributes": ["selected"]
         }],
-        "layer0.texture": "Preap/assets/icon-word-on.png"
+        "layer0.texture": "preap/assets/icon-word-on.png"
     },
 
     //
@@ -802,7 +830,7 @@
     // Show search context button
     {
         "class": "icon_context",
-        "layer0.texture": "Preap/assets/icon-context-off.png",
+        "layer0.texture": "preap/assets/icon-context-off.png",
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
     },
@@ -813,7 +841,7 @@
             "class": "icon_button_control",
             "attributes": ["hover"]
         }],
-        "layer0.texture": "Preap/assets/icon-context-hover.png"
+        "layer0.texture": "preap/assets/icon-context-hover.png"
     },
     {
         "class": "icon_context",
@@ -822,12 +850,12 @@
             "class": "icon_button_control",
             "attributes": ["selected"]
         }],
-        "layer0.texture": "Preap/assets/icon-context-on.png"
+        "layer0.texture": "preap/assets/icon-context-on.png"
     },
     // Use search buffer
     {
         "class": "icon_use_buffer",
-        "layer0.texture": "Preap/assets/icon-buffer-off.png",
+        "layer0.texture": "preap/assets/icon-buffer-off.png",
         "layer0.opacity": 1,
         "content_margin": [8, 8]
     },
@@ -838,7 +866,7 @@
             "class": "icon_button_control",
             "attributes": ["hover"]
         }],
-        "layer0.texture": "Preap/assets/icon-buffer-hover.png"
+        "layer0.texture": "preap/assets/icon-buffer-hover.png"
     },
     {
         "class": "icon_use_buffer",
@@ -847,7 +875,7 @@
             "class": "icon_button_control",
             "attributes": ["selected"]
         }],
-        "layer0.texture": "Preap/assets/icon-buffer-on.png"
+        "layer0.texture": "preap/assets/icon-buffer-on.png"
     },
 
     //
@@ -856,7 +884,7 @@
     // Reverse search direction button
     {
         "class": "icon_reverse",
-        "layer0.texture": "Preap/assets/icon-reverse-off.png",
+        "layer0.texture": "preap/assets/icon-reverse-off.png",
         "layer0.opacity": 1,
         "content_margin": [8, 8]
     },
@@ -867,7 +895,7 @@
             "class": "icon_button_control",
             "attributes": ["hover"]
         }],
-        "layer0.texture": "Preap/assets/icon-reverse-hover.png"
+        "layer0.texture": "preap/assets/icon-reverse-hover.png"
     },
     {
         "class": "icon_reverse",
@@ -876,12 +904,12 @@
             "class": "icon_button_control",
             "attributes": ["selected"]
         }],
-        "layer0.texture": "Preap/assets/icon-reverse-on.png"
+        "layer0.texture": "preap/assets/icon-reverse-on.png"
     },
     // Search wrap button
     {
         "class": "icon_wrap",
-        "layer0.texture": "Preap/assets/icon-wrap-off.png",
+        "layer0.texture": "preap/assets/icon-wrap-off.png",
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
     },
@@ -892,7 +920,7 @@
             "class": "icon_button_control",
             "attributes": ["hover"]
         }],
-        "layer0.texture": "Preap/assets/icon-wrap-hover.png"
+        "layer0.texture": "preap/assets/icon-wrap-hover.png"
     },
     {
         "class": "icon_wrap",
@@ -901,12 +929,12 @@
             "class": "icon_button_control",
             "attributes": ["selected"]
         }],
-        "layer0.texture": "Preap/assets/icon-wrap-on.png"
+        "layer0.texture": "preap/assets/icon-wrap-on.png"
     },
     // Search in selection button
     {
         "class": "icon_in_selection",
-        "layer0.texture": "Preap/assets/icon-selection-off.png",
+        "layer0.texture": "preap/assets/icon-selection-off.png",
         "layer0.opacity": 1,
         "content_margin": [8, 8]
     },
@@ -917,7 +945,7 @@
             "class": "icon_button_control",
             "attributes": ["hover"]
         }],
-        "layer0.texture": "Preap/assets/icon-selection-hover.png"
+        "layer0.texture": "preap/assets/icon-selection-hover.png"
     },
     {
         "class": "icon_in_selection",
@@ -926,7 +954,7 @@
             "class": "icon_button_control",
             "attributes": ["selected"]
         }],
-        "layer0.texture": "Preap/assets/icon-selection-on.png"
+        "layer0.texture": "preap/assets/icon-selection-on.png"
     },
 
     //
@@ -935,8 +963,8 @@
     // Preserve case button
     {
         "class": "icon_preserve_case",
-        "layer0.texture": "Preap/assets/icon-preserve-off.png",
-        "layer0.opacity": 1.0,
+        "layer0.texture": "preap/assets/icon-preserve-off.png",
+        "layer0.opacity": 1,
         "content_margin": [8, 8]
     },
     {
@@ -946,7 +974,7 @@
             "class": "icon_button_control",
             "attributes": ["hover"]
         }],
-        "layer0.texture": "Preap/assets/icon-preserve-hover.png"
+        "layer0.texture": "preap/assets/icon-preserve-hover.png"
     },
     {
         "class": "icon_preserve_case",
@@ -955,7 +983,7 @@
             "class": "icon_button_control",
             "attributes": ["selected"]
         }],
-        "layer0.texture": "Preap/assets/icon-preserve-on.png"
+        "layer0.texture": "preap/assets/icon-preserve-on.png"
     },
 
     //
@@ -964,7 +992,7 @@
     // Highlight results button
     {
         "class": "icon_highlight",
-        "layer0.texture": "Preap/assets/icon-highlight-off.png",
+        "layer0.texture": "preap/assets/icon-highlight-off.png",
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
     },
@@ -975,7 +1003,7 @@
             "class": "icon_button_control",
             "attributes": ["hover"]
         }],
-        "layer0.texture": "Preap/assets/icon-highlight-hover.png"
+        "layer0.texture": "preap/assets/icon-highlight-hover.png"
     },
     {
         "class": "icon_highlight",
@@ -984,7 +1012,7 @@
             "class": "icon_button_control",
             "attributes": ["selected"]
         }],
-        "layer0.texture": "Preap/assets/icon-highlight-on.png"
+        "layer0.texture": "preap/assets/icon-highlight-on.png"
     },
 
     // Empty window background
@@ -1028,7 +1056,7 @@
         {
             "class": "panel_control"
         }],
-        "font.size": 14
+        "font.size": 11
     },
     // Button labels
     {
@@ -1051,7 +1079,7 @@
     // Tooltip container
     {
         "class": "tool_tip_control",
-        "layer0.texture": "Preap/assets/tooltip.png",
+        "layer0.texture": "preap/assets/tooltip.png",
         "layer0.opacity": 1.0,
         "content_margin": [10, 5]
     },
@@ -1063,7 +1091,7 @@
     // Status bar container
     {
         "class": "status_bar",
-        "layer0.texture": "Preap/assets/status-bar-background.png",
+        "layer0.texture": "preap/assets/status-bar-background.png",
         "layer0.opacity": 1,
         "layer0.inner_margin": [2, 2],
         "content_margin": [15, 5, 5, 5]
@@ -1071,7 +1099,7 @@
     {
         "class": "status_bar",
         "settings": ["findreplace_small"],
-        "content_margin": [14, 4, 4, 4]
+        "content_margin": [5, 4, 4, 4]
     },
     {
         "class": "status_button",
@@ -1088,7 +1116,7 @@
     {
         // Sidebar rows
         "class": "tree_row",
-        "layer0.texture": "Preap/assets/sidebar-row-selected.png",
+        "layer0.texture": "preap/assets/sidebar-row-selected.png",
         "layer0.opacity": 0
     },
     {
@@ -1113,7 +1141,7 @@
     {
         "class": "sidebar_label",
         "settings": ["sidebar_font_big"],
-        "font.size": 15
+        "font.size": 12
     },
     {
         "class": "sidebar_label",
@@ -1163,9 +1191,9 @@
     {
         // Sidebar file close
         "class": "close_button",
-        "layer0.texture": "Preap/assets/file-close.png",
+        "layer0.texture": "preap/assets/file-close.png",
         "layer0.opacity": 0.25,
-        "layer1.texture": "Preap/assets/file-dirty.png",
+        "layer1.texture": "preap/assets/file-dirty.png",
         "layer1.opacity": 0,
         "content_margin": [8, 8]
     },
@@ -1176,7 +1204,7 @@
             "class": "tree_row",
             "attributes": ["hover"]
         }],
-        "layer0.opacity": 0
+        "layer0.opacity": 0.5
     },
     {
         "class": "close_button",
@@ -1222,7 +1250,7 @@
     {
         "class": "sidebar_tree",
         "settings": ["sidebar_large"],
-        "row_padding": [30, 5]
+        "row_padding": [25, 5]
     },
     {
         "class": "sidebar_tree",
@@ -1233,7 +1261,7 @@
         "class": "sidebar_tree",
         "settings": ["sidebar_narrow"],
         "row_padding": [10, 4],
-        "indent": 4
+        //"indent": 4
     },
     // Hide close button with sidebar_narrow
     {
@@ -1251,14 +1279,18 @@
         // Replaces Default Folder Icons
         "class": "icon_folder",
         "content_margin": [8, 8],
-        "layer0.texture": "Preap/assets/folder.png",
+        "layer0.texture": "preap/assets/folder.png",
         "layer0.opacity": 1.0,
         "layer1.opacity": 0
     },
     {
         "class": "icon_folder",
-        "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
-        "layer0.texture": "Preap/assets/folder-open.png",
+        "parents": [
+        {
+            "class": "tree_row",
+            "attributes": ["expanded"]
+        }],
+        "layer0.texture": "preap/assets/folder-open.png",
         "layer0.opacity": 1.0,
         "layer1.opacity": 0
     },
@@ -1267,15 +1299,19 @@
         "class": "icon_folder",
         "content_margin": [8, 8],
         "settings": ["sidebar_folder_gray"],
-        "layer0.texture": "Preap/assets/folder-gray.png",
+        "layer0.texture": "preap/assets/folder-gray.png",
         "layer0.opacity": 1.0,
         "layer1.opacity": 0
     },
     {
         "class": "icon_folder",
         "settings": ["sidebar_folder_gray"],
-        "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
-        "layer0.texture": "Preap/assets/folder-open-gray.png",
+        "parents": [
+        {
+            "class": "tree_row",
+            "attributes": ["expanded"]
+        }],
+        "layer0.texture": "preap/assets/folder-open-gray.png",
         "layer0.opacity": 1.0,
         "layer1.opacity": 0
     },
@@ -1283,32 +1319,44 @@
         "class": "icon_folder",
         "settings": ["sidebar_arrows"],
         "layer0.opacity": 0,
-        "layer1.texture": "Preap/assets/collapsed_icon.png",
+        "layer1.texture": "preap/assets/collapsed_icon.png",
         "layer1.opacity": 1.0
     },
     {
         "class": "icon_folder",
-        "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
+        "parents": [
+        {
+            "class": "tree_row",
+            "attributes": ["expanded"]
+        }],
         "settings": ["sidebar_arrows"],
         "layer0.opacity": 0,
-        "layer1.texture": "Preap/assets/expanded_icon.png",
+        "layer1.texture": "preap/assets/expanded_icon.png",
         "layer1.opacity": 1.0
     },
     {
-        // Sidebar file icons
+        // 侧边栏文件图标
         "class": "icon_file_type",
-        // layer0.texture automatically set with relevant icon name
-        "layer0.opacity": 1,
+        //layer0.texture自动设置相关的图标名称
+        "layer0.opacity": 0.3,
         "content_margin": [8, 8]
     },
     {
         "class": "icon_file_type",
-        "parents": [{"class": "tree_row", "attributes": ["hover"]}],
+        "parents": [
+        {
+            "class": "tree_row",
+            "attributes": ["hover"]
+        }],
         "layer0.opacity": 1.0
     },
     {
         "class": "icon_file_type",
-        "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+        "parents": [
+        {
+            "class": "tree_row",
+            "attributes": ["selected"]
+        }],
         "layer0.opacity": 1.0
     }
 ]
